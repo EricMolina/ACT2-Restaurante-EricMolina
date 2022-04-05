@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <plato tipo="pollo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>POLLOTARIANA</nombre>
+    <precio>10.90</precio>
+    <descripcion>Pollo plant-based empanado, alternativa vegana al queso, pimientos asados, cebolla a la plancha, lechuga batavia y pan de cereales vegano.</descripcion>
+    <calorias>780</calorias>
+    <imagen>POLLOTARIANA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA MOSTOLEÑA</nombre>
+    <precio>11.90</precio>
+    <descripcion>Queso americano, pulled pork, cebolla crunchy, lechuga iceberg y salsa BBQ Goiko.</descripcion>
+    <calorias>820</calorias>
+    <imagen>LA_MOSTOLEÑA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vegetal"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA H2O</nombre>
+    <precio>13.90</precio>
+    <descripcion>Croqueta de queso crema, cebolleta y alcachofa, chutney de piña, bacon crujiente y rúcula.</descripcion>
+    <calorias>720</calorias>
+    <imagen>LA_H20.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>frio</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vegetal"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA FILOMENA</nombre>
+    <precio>12.50</precio>
+    <descripcion>Croqueta de queso Monterey y puerros, bacon, portobellos a la plancha, lechuga batavia y salsa mayo ahumada.</descripcion>
+    <calorias>790</calorias>
+    <imagen>LA_FILOMENA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA ISLEÑA</nombre>
+    <precio>11.80</precio>
+    <descripcion>Queso americano, bacon, cebolla morada a la plancha, lechuga iceberg y salsa 50 de Goiko.</descripcion>
+    <calorias>760</calorias>
+    <imagen>LA_ISLENA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA TORITA</nombre>
+    <precio>14.80</precio>
+    <descripcion>Carne, queso Gouda, rabo de toro, tiras de piquillo, cebolla crunchy y lechuga batavia.</descripcion>
+    <calorias>760</calorias>
+    <imagen>LA_TORITA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>frio</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vegetal"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA MISS</nombre>
+    <precio>10.20</precio>
+    <descripcion>Croqueta de queso crema, cebolleta y alcachofa empanada, dos tiras de bacon crujiente, col morada y canónigos.</descripcion>
+    <calorias>855</calorias>
+    <imagen>LA_MISS.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>frio</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA OINK</nombre>
+    <precio>11.50</precio>
+    <descripcion>Carne, crema de Camembert, pulled pork, salsa Barbacoa Goiko, cebolla a la plancha y lechuga batavia.</descripcion>
+    <calorias>920</calorias>
+    <imagen>LA_OINK.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>frio</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA SUIS</nombre>
+    <precio>12.60</precio>
+    <descripcion>Queso Raclette, cebollitas cocidas, hash brown de patata, pepinillos y canónigos.</descripcion>
+    <calorias>910</calorias>
+    <imagen>LA_SUIS.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>frio</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA PITUFINA</nombre>
+    <precio>12.10</precio>
+    <descripcion>Queso azul, cebolla morada a la plancha y lechuga batavia.</descripcion>
+    <calorias>830</calorias>
+    <imagen>LA_PITUFINA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>frio</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="pollo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>GUACA-CHICKEN</nombre>
+    <precio>10.20</precio>
+    <descripcion>Pechuga de pollo a la plancha, queso americano, tomate, cebolla morada, guacamole y lechuga batavia.</descripcion>
+    <calorias>740</calorias>
+    <imagen>GUACA_CHICKEN.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="pollo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA SMOKE</nombre>
+    <precio>11.80</precio>
+    <descripcion>Esta burger está que echa humo. Carne, pulled pork, queso americano, aros de cebolla, lechuga batavia y salsa Barbacoa Goiko.</descripcion>
+    <calorias>850</calorias>
+    <imagen>LA_SMOKE.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="pollo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA KIKI</nombre>
+    <precio>12.90</precio>
+    <descripcion>Pollo crujiente, queso americano, bacon, lechuga iceberg y Salsa 50 de Goiko. Dale un toque especial añadiéndole pepinillos o huevo frito… ¡Otro rollo!</descripcion>
+    <calorias>780</calorias>
+    <imagen>LA_KIKI.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA PEREGRINA</nombre>
+    <precio>11.50</precio>
+    <descripcion>Queso Tetilla, pimientos de Padrón fritos con escamas de sal y emulsión de membrillo con orujo.</descripcion>
+    <calorias>930</calorias>
+    <imagen>LA_PEREGRINA.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>YANKEE</nombre>
+    <precio>12.40</precio>
+    <descripcion>Para los que le gusta poner toooda la carne en el asador. Carne de vaca, costilla de cerdo en salsa Barbacoa Goiko, queso americano, cebolla al grill y lechuga batavia. Si te atreves a añadirle algo más, te recomendamos que la pruebes con cebolla crunchy o champiñones a la plancha. ¡Simplemente brutal!</descripcion>
+    <calorias>895</calorias>
+    <imagen>YANKEE.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>caliente</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vegetal"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>EDAMAMI</nombre>
+    <precio>13.10</precio>
+    <descripcion>Burger vegetariana a base de edamames, brócoli, cuscús y arroz. Con berenjena frita, alternativa vegana al queso, cebolla caramelizada, tomate, lechuga batavia y pan de cereales veganos.</descripcion>
+    <calorias>680</calorias>
+    <imagen>EDAMAMI.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>frio</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>LA SMASH</nombre>
+    <precio>11.60</precio>
+    <descripcion>Una burger con bacon, muuuucho queso americano, cebolla a la plancha y 2 carnes de 100 g estilo SMASH 😎 ¿Cómo? Carnes aplastadas, más finas, crujientes por fuera, jugosas por dentro y con un sabor más potente ⚡️ ¡No te lo pienses mash 🍔!</descripcion>
+    <calorias>855</calorias>
+    <imagen>LA_SMASH.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>BOMBA SEXY</nombre>
+    <precio>10.30</precio>
+    <descripcion>Es una realidad: no hay burger ni más sexy ni más bomba. Queso Monterey Jack empanado, setas fritas, bacon, salsa Mayo ahumada y lechuga batavia. Los más burgerlovers le añaden pepinillos o cebolla natural, ¿te atreves?</descripcion>
+    <calorias>830</calorias>
+    <imagen>BOMBA_SEXY.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="cerdo"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>KEVIN BACON</nombre>
+    <precio>11.60</precio>
+    <descripcion>El auténtico best seller de esta casa. ¿Sabes cómo se hace una Kevin? Fácil pero increíblemente rico: Picamos la carne directamente en la plancha y la mezclamos con trozos de bacon, cebolla crunchy y queso americano. ¡Una vez que la pruebas no puedes dejar de pensar en ella! Te recomendamos que le añadas queso de cabra o plátano dorado. ¡Es imposible no babear!</descripcion>
+    <calorias>910</calorias>
+    <imagen>KEVIN_BACON.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>picante</caracteristica>
+      <caracteristica>caliente</caracteristica>
+      <caracteristica>queso</caracteristica>
+    </caracteristicas>
+  </plato>
+  <plato tipo="vacuno"> <!-- vacuno, cerdo, pollo, vegetal -->
+    <nombre>CHIPOTLE</nombre>
+    <precio>9.90</precio>
+    <descripcion>Si amas el guacamole, deja de buscar, esta es tu burger. Guacamole casero, fresco y rústico, acompañado con salsa Chipotle. Si quieres darle un toque distinto, te recomendamos añadirle queso americano o bacon. ¡ÑAAAAM!</descripcion>
+    <calorias>860</calorias>
+    <imagen>CHIPOTLE.png</imagen>
+    <caracteristicas> <!-- picante o dulce, fria o caliente, queso -->
+      <caracteristica>dulce</caracteristica>
+      <caracteristica>caliente</caracteristica>
+    </caracteristicas>
+  </plato>
+</menu>

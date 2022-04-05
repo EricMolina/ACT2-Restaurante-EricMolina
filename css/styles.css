@@ -1,0 +1,278 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #5D0000;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row-c:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.column-70 {
+    width: 70%;
+    float: left;
+}
+
+.column-30 {
+    width: 30%;
+    float: left;
+}
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Eliminar visualmente la barra de scroll lateral */
+
+body::-webkit-scrollbar {
+    width: 1vw;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Otras clases */
+
+._topName {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 1.2vw;
+    color: #b14343;
+}
+
+._title {
+    height: 74%;
+}
+
+._title img {
+    width: 55%;
+}
+
+._arrowContainer {
+    height: 80%;
+    width: 12.5%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+._arrowContainer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+._arrow {
+    height: 26.5%;
+}
+
+._arrow img {
+    height: 55%;
+    animation: arrowAnim 2s infinite ease-in-out;
+}
+
+._typeTitleContainer {
+    /*background-color: red;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vw;
+    text-shadow: 0.7vw 0.7vw 0.8vw rgba(0, 0, 0, 0.55);
+    width: 100%;
+    float: left;
+}
+
+._typeTitleContainer h1 {
+    margin: 2%;
+}
+
+._type {
+    width: 80%;
+    margin: 2% 0 2% 10%;
+}
+
+._typeContent {
+    margin-bottom: 8%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 2vw;
+    outline: 1vw solid rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
+}
+
+._typeContent:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: 1vw solid rgba(255, 255, 255, 0.15);
+}
+
+._typeValuesTitle {
+    font-size: 2vw;
+}
+
+._typeValuesTitle h1 {
+    padding: 0;
+    margin: 1.5%;
+}
+
+._typeValuesCost {
+    font-size: 1.75vw;
+    /*background-color: black;*/
+    height: 6vw;
+}
+
+._typeValuesCost h2 {
+    margin: 2%;
+}
+
+._typeValuesText {
+    /*background-color: hotpink;*/
+    font-size: 1.5vw;
+}
+
+._typeValuesText p {
+    margin: 2% 5%;
+}
+
+._typeValuesCalories {
+    /*background-color: orange;*/
+    font-size: 2vw;
+    height: 4.5vw;
+}
+
+._typeValuesCalories h3 {
+    margin: 0;
+    padding: 0;
+}
+
+._typeValuesTypes {
+    /*background-color: yellow;*/
+    float: left;
+    width: 40%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+._typeValuesTypes img {
+    float: left;
+    margin: auto;
+    width: 20%;
+}
+
+._typeImage img {
+    width: 65%;
+    object-fit: cover;
+    object-position: bottom;
+    outline: 0.5vw solid white;
+    border-radius: 1.5vw;
+}
+
+._separator {
+    width: 100%;
+    height: 15vh;
+}
+
+._footer {
+    width: 100%;
+    height: 30vh;
+    font-size: 2.2vw;
+    text-align: center;
+    color: #b14343;
+}
+
+._footer p {
+    margin-top: 10%;
+}
+
+
+/* Animaciones */
+
+@keyframes arrowAnim {
+    0% {
+        margin-top: -12%;
+    }
+    50% {
+        margin-top: 12%;
+    }
+    100% {
+        margin-top: -12%;
+    }
+}
