@@ -6,6 +6,8 @@ html {
     scroll-behavior: smooth;
     font-family: 'Fjalla One', sans-serif;
     color: white;
+    background-color: #260000;
+    background-image: linear-gradient(90deg, #260000 0%, #5d0000 50%, #260000 100%);
 }
 
 * {
@@ -14,7 +16,6 @@ html {
 
 body {
     margin: 0;
-    background-color: #5D0000;
     width: 100%;
     height: 100%;
 }
@@ -28,6 +29,7 @@ body {
 
 body {
     margin: 0;
+    transform-style: preserve-3d;
 }
 
 
@@ -77,12 +79,14 @@ body {
     float: left;
 }
 
-.column-70 {
+.column-70,
+.column-70_type {
     width: 70%;
     float: left;
 }
 
-.column-30 {
+.column-30,
+.column-30_type {
     width: 30%;
     float: left;
 }
@@ -127,6 +131,10 @@ body::-webkit-scrollbar-thumb:hover {
     height: 74%;
 }
 
+._titleImg {
+    animation: tittleAnim 2.5s ease-out;
+}
+
 ._title img {
     width: 55%;
 }
@@ -148,7 +156,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 ._arrow img {
-    height: 55%;
+    width: 65%;
     animation: arrowAnim 2s infinite ease-in-out;
 }
 
@@ -176,7 +184,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 2vw;
     outline: 1vw solid rgba(255, 255, 255, 0.05);
-    transition: 0.2s;
+    transition: 1s;
+    opacity: 0;
 }
 
 ._typeContent:hover {
@@ -262,6 +271,15 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 10%;
 }
 
+.black_overlay {
+    position: absolute;
+    width: 100%;
+    height: 10000%;
+    top: 0;
+    background-color: #000000;
+    pointer-events: none;
+}
+
 
 /* Animaciones */
 
@@ -274,5 +292,14 @@ body::-webkit-scrollbar-thumb:hover {
     }
     100% {
         margin-top: -12%;
+    }
+}
+
+@keyframes tittleAnim {
+    0% {
+        margin-top: 20vw;
+    }
+    100% {
+        margin-top: 0%;
     }
 }

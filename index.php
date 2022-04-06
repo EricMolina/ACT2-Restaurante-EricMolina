@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
         <p class="flex">Desarrollado por: Eric Molina Molina</p>
     </div>
     <div class="row _title flex">
-        <img src="./img/Title.png" alt="">
+        <img class="_titleImg" src="./img/Title.png" alt="">
     </div>
     <div class="row _arrow flex">
         <div class="_arrowContainer flex" style="cursor: pointer;" onclick='window.location="#menu"'>
@@ -32,7 +33,7 @@
         <!--<div class="row _type">
             <div class="column-1 _typeContent">
                 <div class="column-70 _typeValues">
-                    <div class="column-70 _typeValuesTitle flex">
+                    <div class="column-70_type _typeValuesTitle flex">
                         <h1>Vacuno con queso</h1>
                     </div>
                     <div class="column-30 _typeValuesCost flex">
@@ -54,7 +55,7 @@
                         <img src="./img/Circle.png" alt="">
                     </div>
                 </div>
-                <div class="column-30 _typeImage flex">
+                <div class="column-30_type _typeImage flex">
                     <img src="./img/Circle.png" alt="">
                 </div>
             </div>
@@ -87,6 +88,7 @@ foreach($menu->plato as $plato) {
 }
 
 //IMPRIMIR POR PANTALLA LOS DATOS
+$id_plato = 0;
 $orden = true;
 foreach($tipos as $tipo) {
     print('
@@ -97,16 +99,20 @@ foreach($tipos as $tipo) {
         </div>
     ');
     foreach($tipo as $plato) {
-        print('
-        <div class="row _type">
-            <div class="column-1 _typeContent">
-        ');
         if ($orden) {
             print('
+            <div class="row _type">
+                <div class="column-1 _typeContent" id="plato_'.$id_plato.'" style="margin-left: -6vw;">
                 <div class="column-30 _typeImage flex">
                     <img src="./img/platos/'.$plato->imagen.'" alt="">
                 </div>
             ');
+        }
+        else {
+            print('
+        <div class="row _type">
+            <div class="column-1 _typeContent" id="plato_'.$id_plato.'" style="margin-left: 6vw;">
+        ');
         }
         print('
                 <div class="column-70 _typeValues">
@@ -147,6 +153,7 @@ foreach($tipos as $tipo) {
         ');
 
         $orden ? $orden = false : $orden = true;
+        $id_plato++;
         echo "<script>console.log('".$orden."');</script>";
     }
     print('<div class="column-1 _separator"></div>');
@@ -159,5 +166,49 @@ foreach($tipos as $tipo) {
             <p class="">Desarrollado por: Eric Molina Molina</p>
         </div>
     </div>
+    <div class="black_overlay"></div>
+
+    <script>
+        $(".black_overlay").fadeOut(1000);
+        $("._topName").fadeOut(0);
+        $("._topName").fadeIn(6000);
+        $("._title").fadeOut(0);
+        $("._title").fadeIn(3500);
+        $("._arrow").fadeOut(0);
+
+        setTimeout(function(){ 
+            $("._arrow").fadeIn(4000)
+        }, 1000);
+        
+                
+        window.onload = main;
+
+        function main() {
+            window.addEventListener("scroll", function(){
+                // if(isElementIntoView("#summary")) document.getElementsByTagName("form")[0].style.opacity = "1" 
+                <?php
+                    $orden = true;
+                    for ($i=0; $i < $id_plato; $i++) { 
+                        print('
+                        if(isElementIntoView("#plato_'.$i.'")) {
+                            setTimeout(function(){ 
+                                document.getElementById("plato_'.$i.'").style.opacity = "1" 
+                                document.getElementById("plato_'.$i.'").style.marginLeft = 0
+                            }, 200);
+                        }
+                        ');
+                    }
+                ?>
+            });
+            
+        }
+
+        function isElementIntoView(el) { 
+            var e = document.querySelector(el);
+            var rect = e.getBoundingClientRect();
+            return  window.innerHeight-rect.top >= 0; 
+            
+        }
+    </script>
 </body>
 </html>
