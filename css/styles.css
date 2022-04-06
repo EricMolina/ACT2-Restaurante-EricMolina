@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 12.5%;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10%;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 ._arrowContainer:hover {
@@ -252,6 +252,7 @@ body::-webkit-scrollbar-thumb:hover {
     object-position: bottom;
     outline: 0.5vw solid white;
     border-radius: 1.5vw;
+    margin-top: 4%;
 }
 
 ._separator {
@@ -280,26 +281,66 @@ body::-webkit-scrollbar-thumb:hover {
     pointer-events: none;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.scaleHover {
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.scaleHover:hover {
+    transform: scale(1.15);
+}
+
 
 /* Animaciones */
 
 @keyframes arrowAnim {
     0% {
         margin-top: -12%;
+        transform: scale(0.9);
+    }
+    12.5% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    37.5% {
+        transform: scale(1);
     }
     50% {
         margin-top: 12%;
+        transform: scale(0.9);
+    }
+    62.5% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    87.5% {
+        transform: scale(1);
     }
     100% {
         margin-top: -12%;
+        transform: scale(0.9);
     }
 }
 
 @keyframes tittleAnim {
     0% {
         margin-top: 20vw;
+        transform: scale(0.6);
     }
     100% {
         margin-top: 0%;
+        transform: scale(1);
     }
 }

@@ -19,7 +19,7 @@
         <img class="_titleImg" src="./img/Title.png" alt="">
     </div>
     <div class="row _arrow flex">
-        <div class="_arrowContainer flex" style="cursor: pointer;" onclick='window.location="#menu"'>
+        <div id="arrow" class="_arrowContainer flex scaleHover" style="cursor: pointer;" onclick='window.location="#menu"; DisableArrow();'>
             <img src="./img/Arrow.png" alt="">
         </div>
     </div>
@@ -92,7 +92,7 @@ $id_plato = 0;
 $orden = true;
 foreach($tipos as $tipo) {
     print('
-        <div class="row _typeTitle">
+        <div class="row _typeTitle noselect">
             <div class="column-1 _typeTitleContainer flex">
                 <h1>'.$tipo[0]["tipo"].'</h1>
             </div>
@@ -101,38 +101,38 @@ foreach($tipos as $tipo) {
     foreach($tipo as $plato) {
         if ($orden) {
             print('
-            <div class="row _type">
+            <div class="row _type noselect">
                 <div class="column-1 _typeContent" id="plato_'.$id_plato.'" style="margin-left: -6vw;">
                 <div class="column-30 _typeImage flex">
-                    <img src="./img/platos/'.$plato->imagen.'" alt="">
+                    <img class="scaleHover" src="./img/platos/'.$plato->imagen.'" alt="">
                 </div>
             ');
         }
         else {
             print('
-        <div class="row _type">
+        <div class="row _type noselect">
             <div class="column-1 _typeContent" id="plato_'.$id_plato.'" style="margin-left: 6vw;">
         ');
         }
         print('
                 <div class="column-70 _typeValues">
                     <div class="column-70 _typeValuesTitle flex">
-                        <h1>'.$plato->nombre.'</h1>
+                        <h1 class="scaleHover">'.$plato->nombre.'</h1>
                     </div>
                     <div class="column-30 _typeValuesCost flex">
-                        <h2>'.$plato->precio.' €</h2>
+                        <h2 class="scaleHover">'.$plato->precio.' €</h2>
                     </div>
                     <div class="column-1 _typeValuesText">
-                        <p>'.$plato->descripcion.'</p>
+                        <p class="scaleHover">'.$plato->descripcion.'</p>
                     </div>
                     <div class="column-30 _typeValuesCalories flex">
-                        <h3>'.$plato->calorias.' kcal</h3>
+                        <h3 class="scaleHover">'.$plato->calorias.' kcal</h3>
                     </div>
                     <div class="_typeValuesTypes flex">
         ');
         foreach($plato->caracteristicas as $caracteristica) {
             foreach($caracteristica as $car) {
-                print('<img src="./img/favicon/'.$car.'.svg" alt="'.$car.'" style="filter: invert(1);">');
+                print('<img class="scaleHover" src="./img/favicon/'.$car.'.svg" alt="'.$car.'" style="filter: invert(1);">');
             }
         }
         print('
@@ -142,7 +142,7 @@ foreach($tipos as $tipo) {
         if (!$orden) {
             print('
                 <div class="column-30 _typeImage flex">
-                    <img src="./img/platos/'.$plato->imagen.'" alt="">
+                    <img class="scaleHover" src="./img/platos/'.$plato->imagen.'" alt="">
                 </div>
             ');
         }
@@ -208,6 +208,12 @@ foreach($tipos as $tipo) {
             var rect = e.getBoundingClientRect();
             return  window.innerHeight-rect.top >= 0; 
             
+        }
+
+        function DisableArrow() {
+            setTimeout(function(){ 
+                document.getElementById("arrow").style.transform = "scale(0)";
+            }, 200);
         }
     </script>
 </body>
